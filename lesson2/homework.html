@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js2_hw</title>
+</head>
+<body>
+
+<script>
+
+    ///////////////////////////////////////////
+
+
+    let time = +prompt('Число от 0 до 59')
+    if (time <16 && time > -1){
+      console.log('первая')
+    }
+    else if (time >15 && time < 31){
+      console.log('вторая')
+    }
+    else if( time> 30 && time< 46 ){
+      console.log('третья')
+    }
+    else if( time>45 && time<60){
+      console.log('четвертая')
+    }
+
+
+    /////////////////////////////////////////
+
+    let day  = 30;
+
+    if (day  < 11 && day > 0){
+
+        console.log('первая декада')
+    }
+    else if (day  > 10 && day  < 21){
+        console.log('вторая декада')
+    }
+    else if (day  > 20 && day  < 32){
+        console.log('третья декада')
+    }
+
+
+    /////////////////////////////////////////
+
+
+    let test = false;
+    if (test != true){
+        console.log("Вірно")
+    }
+
+    else if (test != false){console.log("Неправильно")}
+
+    ///////////////////////////////////////////////////
+
+    let test2 = false;
+
+    let test3 = test2  === true ? "вірно" : "не вірно ";
+    console.log(test3)
+
+
+    //////////////////////////////////////////////////
+
+
+    let a = 0;
+    if (a != 0) {
+        console.log('Вірно')
+    } else if (a == 0) {
+        console.log('Невірно')
+    }
+    /////////////////////////////////////////////////
+
+    let week = "saturday";
+    switch (week) {
+
+        case "monday":
+            console.log("встать");
+            console.log("поесть");
+            console.log("лечь спать");
+
+            break;
+
+        case "tuesday" :
+            console.log("встать");
+            console.log("побегать");
+            console.log("выспаться");
+
+            break;
+
+        case "wednesday" :
+            console.log("встать");
+            console.log("купить кукурузу");
+            console.log("уснуть");
+
+            break;
+
+        case "thursday" :
+            console.log("встать");
+            console.log("выпить кофе");
+            console.log("попрыгать");
+
+            break;
+
+        case "friday" :
+            console.log("встать");
+            console.log("поездить");
+            console.log("спать");
+
+            break;
+        case "saturday" :
+            console.log("встать");
+            console.log("сесть");
+            console.log("спать");
+
+            break;
+
+        case "sunday" :
+            console.log("встать");
+            console.log("походить");
+            console.log("поспать");
+            break;
+    }
+
+
+   ////////////////////////////////////////
+
+    let year = +prompt("введите год");
+
+    if (year %4 !=0){
+
+        alert(" Не Високосний рік")
+    }
+    else if (year %4 == 0){
+        alert("Високосний рік")
+    }
+
+
+    //////////////////////////////////////
+
+    let qs = prompt("Яка «офіційна» назва JavaScript?")
+
+    if (qs == "ECMAScript") {
+        alert("Правильно!")
+    } else if (qs != "ECMAScript ") {
+        alert("Не знаєте? ECMAScript!")
+    }
+
+
+</script>
+
+
+</body>
+</html>
