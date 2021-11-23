@@ -34,7 +34,8 @@ listCreator44(6, 66, 1666);
     //////////
 
 // - створити функцію яка повертає найбільше число з масиву
-let listCreator33 =( let = mass [1, 5, 6, 88, 8778, 88, 2, 0, -12, 665656]) => {
+let mass = [1, 5, 6, 88, 8778, 88, 2, 0, -12, 665656]
+let listCreator33 = (mass) => {
     let max = mass[0]
     for (let i = 0; i < mass.length; i++) {
         if (mass[i] > max) {
@@ -49,10 +50,51 @@ console.log(maximalnoe);
 // - створити функцію яка повертає найменьше число з масиву
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+let maxa = [1,2,10]
+let listCreator55 = (maxa) => {
+    let res = 0;
+    for (let i = 0; i < maxa.length; i++){
+        res= res + maxa[i]
+    }
+    return res
+}
+
+let sumArr = listCreator55(maxa)
+console.log(sumArr)
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
+ let maxaser = [1,2,10]
+
+let listCreator66=(maxaser)=>{
+    let res2 = 0;
+    for (let i = 0; i < maxaser.length; i++){
+        res2= (res2 + maxaser[i])
+    }
+    return res2 / maxaser.length
+}
+
+let sumArr2 = listCreator66(maxaser)
+console.log(sumArr2)
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+let minMax11 = (...aaaaaa)=> {
+    let min = aaaaaa[0];
+    let max = aaaaaa[0];
+    for (let i = 0; i < aaaaaa.length; i++) {
+        if ( min < aaaaaa[i]) {
+            max = aaaaaa[i]
+        } else min = aaaaaa[i]
+    }
+    console.log(max, 'max');
+    return min
+}
+
+let minimalMax = minMax11(1, 3, 4, 6, -12, -15000, 57892394)
+console.log(minimalMax);
+
+
 
 // - створити функцію яка заповнює масив рандомними числами
 
