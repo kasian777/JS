@@ -143,17 +143,17 @@
 
 // debugger
 
-//
-// function reversblok(karz) {
-//     let mazz = [];
-//     for (let i = karz.length - 1; i >= 0; i-- ) {
-//         const ar=karz[i];
-//         ar.push(mazz);
-//
-//     }
-//     return karz[i];
-//
-// }
-//
-// let dd =reversblok(118)
-// console.log(dd)
+
+function reversblok(karz) {
+    let mazz = [];
+    for (let i = karz.length - 1; i >= 0; i-- ) {
+        const ar=karz[i];
+        mazz.push(ar);
+
+    }
+    return mazz;
+
+}
+
+let dd =reversblok([4,5,10])
+console.log(dd)
