@@ -28,9 +28,7 @@ console.log(str3.trim())
 let str4 = 'Каждый охотник желает знать';
 let split = str4.split(' ')
 console.log(split);
-// let str41 = 'Каждый охотник желает знать';
-// let split = str41.(' ')
-// console.log(split);
+
 //
 
 //
