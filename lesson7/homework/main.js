@@ -7,9 +7,10 @@ class User {
         this.email = email;
         this.phone = phone;
     }
+
 }
 
-let user = new User(1, 'Dima', 'Kasian', 'kfs@sdf', '+316661666222');
+let user = new User (1, 'Dima', 'Kasian', 'kfs@sdf', '+316661666222');
 console.log(user)
 
 
@@ -31,7 +32,7 @@ let uzer10 = [
 console.log(uzer10)
 //
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-let names = (ddd) => ddd.filter((vv => vv.id % 2 === 0));
+// let names = (ddd) => ddd.filter((vv => vv.id % 2 === 0));
 
 console.log(names(uzer10))
 
