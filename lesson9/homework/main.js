@@ -71,9 +71,10 @@ for (const i of coursesAndDurationArray3) {
     aaaa.classList.add('item')
     let www = document.createElement('h1');
     www.innerText = `${i.title}`
-    www.classList.add('heading')
-    let ddd = document.createElement('p')
-    ddd.innerText =  `${i.monthDuration}`
-    ddd.classList.add('description')
+    www.classList.add('heading');
+    let ddd = document.createElement('p');
+    ddd.innerText =  `${i.monthDuration}`;
+    ddd.classList.add('description');
 
-    document.body.append(aaaa,www,ddd);}
+    document.body.append(aaaa,www,ddd);
+}
