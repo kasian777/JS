@@ -2,9 +2,9 @@
 //     При відправці форми записати об'єкт в localstorage
 //
 document.getElementById('btn').onclick = function () {
-    let name = document.getElementsByName('name')[0]
-    let age = document.getElementsByName('age')[0]
-    localStorage.setItem(name.value, JSON.stringify(age.value))
+    let name = document.getElementsByName('name')[0];
+    let age = document.getElementsByName('age')[0];
+    localStorage.setItem(name.value, JSON.stringify(age.value));
 };
 
 
@@ -22,11 +22,11 @@ document.getElementById('btn2').onclick = function () {
         type: document.form2.type.value,
         volume: document.form2.volume.value
     };
-    const data = localStorage.getItem('masss')
+    const data = localStorage.getItem('masss');
     if (data) {
-        const arr = JSON.parse(data)
-        localStorage.setItem('masss', JSON.stringify([...arr, car]))
+        const arr = JSON.parse(data);
+        localStorage.setItem('masss', JSON.stringify([...arr, car]));
     } else {
-        localStorage.setItem('masss', JSON.stringify([car]))
+        localStorage.setItem('masss', JSON.stringify([car]));
     }
 };

@@ -21,18 +21,18 @@ for (const user of users) {
     usertext.innerText = (`${user.name}` + ` ` + `${user.age}` + ` ` + `${user.status}`)
     let btn3 = document.createElement('button');
     btn3.innerText = ('Добавь в понравившиеся');
-    userd.append(usertext, btn3)
-    document.body.append(userd)
+    userd.append(usertext, btn3);
+    document.body.append(userd);
     btn3.onclick = function () {
-        localStorage.setItem('key', JSON.stringify(`${user.name} ${user.age} ${user.status}`))
+        localStorage.setItem('key', JSON.stringify(`${user.name} ${user.age} ${user.status}`));
 
 
 
 
         // const data = localStorage.getItem('masss')
         // if (data) {
-        //     const arr = JSON.parse(data)
-        //     localStorage.setItem('masss', JSON.stringify([...arr, user]))
+        //     const arr = JSON.parse(data);
+        //     localStorage.setItem('masss', JSON.stringify([...arr, user]));
         // } else {
         //     localStorage.setItem('masss', JSON.stringify([user]))
         // }
