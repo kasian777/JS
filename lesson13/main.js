@@ -32,6 +32,7 @@ function goeat(eat) {
             if (eat) {
                 resolve('sosiski')
 
+
             } else reject('mivina')
         }, 300)
     })
@@ -177,4 +178,4 @@ async function holliday() {
     console.log(goeat, 'goeat');
 }
 
-holliday().then(r => {})
+holliday()
