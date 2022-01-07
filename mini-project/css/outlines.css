@@ -1,0 +1,25 @@
+.new {
+    background: blue;
+    width: 180px;
+    border-radius: 5px;
+
+}
+.btn {
+    background: yellow;
+
+    width: 90%;
+
+
+}
+.btnstle {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.blok{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+
+}
