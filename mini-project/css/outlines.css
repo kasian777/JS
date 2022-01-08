@@ -1,25 +1,32 @@
 .new {
     background: blue;
-    width: 180px;
+    width: 45%;
+    height: 60px;
     border-radius: 5px;
+    margin: 10px;
 
 }
 .btn {
     background: yellow;
-
+padding-top: 5px;
     width: 90%;
-
+    cursor: pointer;
 
 }
 .btnstle {
     display: flex;
     justify-content: center;
-    cursor: pointer;
+
 }
 
 .blok{
+    padding-top: 5px;
     display: flex;
     justify-content: center;
     color: yellow;
 
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
 }

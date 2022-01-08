@@ -1,34 +1,38 @@
-
 // В index.html
 // 1 получить массив объектов user с endpoint`а https://jsonplaceholder.typicode.com/users
 // 2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.
-// 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html, которая имеет детальную информацию про объект на который кликнули
+// 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу .html, которая имеет детальную информацию про объект на который кликнули
 fetch(`https://jsonplaceholder.typicode.com/users`)
-    .then(reponse =>reponse.json())
-    .then(users =>{
-        for (const user of users){
+    .then(reponse => reponse.json())
+    .then(users => {
+        for (const user of users) {
+
+
             let divbig = document.createElement('div')
             divbig.classList.add('new')
             let div = document.createElement('div')
             div.classList.add('blok')
-            let h1 = document.createElement('h1')
 
-            div.innerText =user.id +' '+' '+user.name
-let vid = document.createElement('div')
+
+
+            div.innerText = user.id + ' ' + ' ' + user.name
+            let vid = document.createElement('div')
             vid.classList.add('btnstle')
             let comButton = document.createElement('button')
             comButton.innerText = 'Подробнее'
-comButton.classList.add('btn')
+            comButton.classList.add('btn')
 
-            comButton.onclick = () => {
-                fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/user`)
-                    .then(reponse =>reponse.json())
-                    .then(user => {
-                        console.log(user);
-                    })
-            }
-vid.append(comButton)
-            divbig.append(div, vid,  h1)
+
+            comButton.onclick = function () {
+                window.location.href = 'user-details.html'
+                localStorage.setItem('key', JSON.stringify(`${user.id} `))
+            };
+
+
+            vid.append(comButton)
+            divbig.append(div, vid)
+
+
             document.body.append(divbig)
         }
     })
